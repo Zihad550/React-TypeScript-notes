@@ -1,27 +1,19 @@
 import React from "react";
 import "./App.css";
-import Greets from "./components/Greets";
-import Person from "./components/Person";
+import ConditionalType from "./components/ConditionalType";
+import Heading from "./components/Heading";
+import Optional from "./components/Optional";
+import Parent from "./components/Parent";
 
 function App() {
-  const skills = [
-    {
-      name: "JavaScript",
-      level: "Pro",
-    },
-    {
-      name: "React",
-      level: "Intermediate",
-    },
-    {
-      name: "Typescript",
-      level: "Pro",
-    },
-  ];
   return (
     <div className="App">
-      <Greets name="Jehad" />
-      <Person name={{ first: "Jehad", last: "Hossain" }} skills={skills} />
+      <ConditionalType status="success" />
+      <Heading>Welcome to my website</Heading>
+      <Parent>
+        <Heading>Welcome to my website</Heading>
+      </Parent>
+      <Optional messageName="Jehad's messages" />
     </div>
   );
 }

@@ -1,7 +1,22 @@
-# Note-1
+# Note-2
 
-# Basic Types
+- use union for conditional types
 
-- for declaring type of string, number and boolean and using them see **Greets.tsx** for example.
+```
+// if the response type is beside this three then this will give error
+type ResType = {
+  response: "success" | "error" | "pending";
+}
+```
 
-- declare type on object and array **person.tsx**
+- react children type **Heading.tsx**
+- how to specify children prop when pass inside another component **Parent.tsx**
+
+- optional type: to do this just write a question mark after you have writed the element name to give type like:
+
+```
+ type HeadingType = {
+   note?: string,
+   id?: number,
+ }
+```
