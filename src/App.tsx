@@ -1,15 +1,11 @@
 import React from "react";
 import "./App.css";
-import Person from "./components/Person";
+import Loggedin from "./components/Loggedin";
 
 function App() {
   return (
     <div className="App">
-      <Person
-        name={{ first: "Jehad", last: "Hossain" }}
-        age={18}
-        job="web developer"
-      />
+      <Loggedin />
     </div>
   );
 }

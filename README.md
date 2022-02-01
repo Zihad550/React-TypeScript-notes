@@ -1,7 +1,8 @@
-# Note-5
+# Note-6
 
-## Re-usability
+## use Type on useState hooks
 
-- make a external file for all your types for example you have a **person.tsx** so you can make a file name **person.types.ts**
+- Most of the time we don't have to explicitly set the use state value type. TypeScript automatically sets the value type. **Loggedin.tsx** for example.
 
-- you can use one type into another **Person.types.ts**
+- To use type on useState hook see user.tsx
+- You only use when the initial value type is different compared with future value type.
