@@ -1,5 +1,7 @@
-# Note-4
+# Note-5
 
-## styles as props
+## Re-usability
 
-- check **Container.tsx** for example
+- make a external file for all your types for example you have a **person.tsx** so you can make a file name **person.types.ts**
+
+- you can use one type into another **Person.types.ts**
