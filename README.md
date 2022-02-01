@@ -1,22 +1,17 @@
-# Note-2
+# Note-3
 
-- use union for conditional types
+## Event Props
+
+- case-1: onclick event return nothing: **Button.tsx**
+  `type ButtonProps = { handleClick: () => void; }`
+
+- case-2: when you need to pass event **Button2.tsx**
 
 ```
-// if the response type is beside this three then this will give error
-type ResType = {
-  response: "success" | "error" | "pending";
+// if you want to pass a second parameter you can do that also just seperate it with comma
+type ButtonProps = {
+   handleClick: (e:React.MouseEvent<HTMLButtonElement>, id:number) => void
 }
 ```
 
-- react children type **Heading.tsx**
-- how to specify children prop when pass inside another component **Parent.tsx**
-
-- optional type: to do this just write a question mark after you have writed the element name to give type like:
-
-```
- type HeadingType = {
-   note?: string,
-   id?: number,
- }
-```
+- case-3: onChange Event **Input.tsx**

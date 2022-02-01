@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import ConditionalType from "./components/ConditionalType";
-import Heading from "./components/Heading";
-import Optional from "./components/Optional";
-import Parent from "./components/Parent";
+import Button from "./components/Button";
+import Button2 from "./components/Button2";
+import Input from "./components/Input";
 
 function App() {
+  const [value, setValue] = useState("Jehad");
+  const num = 5;
+  console.log(value);
+
   return (
     <div className="App">
-      <ConditionalType status="success" />
-      <Heading>Welcome to my website</Heading>
-      <Parent>
-        <Heading>Welcome to my website</Heading>
-      </Parent>
-      <Optional messageName="Jehad's messages" />
+      {/* no event button */}
+      <Button handleClick={() => console.log("Button clicked")} />
+
+      {/* with event button */}
+      <Button2
+        id={5}
+        handleClick={(e, id) => console.log("Button clicked", e, id)}
+      />
+      <Input value={value} handleChange={(e) => setValue(e.target.value)} />
     </div>
   );
 }
