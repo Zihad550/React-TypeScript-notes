@@ -1,5 +1,5 @@
-# Note-7
+# Note-8
 
-## Type Assertion
+## useReducer hook
 
-- You can use it to tell typescript that the object is not null
+- using types on useReducer hook. **Counter.tsx** for example.
