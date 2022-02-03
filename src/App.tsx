@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import Counter from "./components/Counter";
+import Private from "./components/Private";
+import Profile from "./components/Profile";
 
 function App() {
   return (
     <div>
-      <Counter message="Something from" />
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
