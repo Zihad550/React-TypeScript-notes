@@ -1,5 +1,9 @@
-# Note-8
+# Note-9
 
-## useReducer hook
+## Using type on react context API
 
-- using types on useReducer hook. **Counter.tsx** for example.
+- for example see **Theme context**
+
+## handle use context API for future value
+
+- for example see **user context**

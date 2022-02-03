@@ -1,12 +1,18 @@
 import React from "react";
 import "./App.css";
-import Counter from "./components/Counter";
+import Box from "./components/context/Box";
+import ThemeContextProvider from "./components/context/ThemeContext";
+import User from "./components/context/User";
+import UserContextProvider from "./components/context/UserContext";
 
 function App() {
   return (
-    <div className="App">
-      <Counter />
-    </div>
+    <UserContextProvider>
+      <ThemeContextProvider>
+        <Box />
+        <User />
+      </ThemeContextProvider>
+    </UserContextProvider>
   );
 }
 
