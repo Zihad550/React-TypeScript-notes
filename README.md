@@ -1,5 +1,3 @@
-# Note-14
+# Note-15
 
-## Restricting Props
-
-- see the **randomNumber.tsx** for example
+## Template Literals and Exclude
