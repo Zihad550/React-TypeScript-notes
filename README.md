@@ -1,9 +1,9 @@
-# Note-9
+# Note-10
 
-## Using type on react context API
+## using type on useRef hook
 
-- for example see **Theme context**
+- un mutable element **DomRef.tsx**
 
-## handle use context API for future value
+  - set the element type
 
-- for example see **user context**
+- mutable element **MutableRef.tsx**
