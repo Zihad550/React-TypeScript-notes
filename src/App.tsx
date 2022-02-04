@@ -1,16 +1,19 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/Button";
+import Text from "./components/Text";
 
 function App() {
   return (
     <div>
-      <Button
-        onClick={() => console.log("print on the console")}
-        variant="primary"
-      >
-        Click me
-      </Button>
+      <Text as="h2" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text htmlFor="someId" as="label" size="sm" color="secondary">
+        Label
+      </Text>
     </div>
   );
 }
